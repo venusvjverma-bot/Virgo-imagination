@@ -458,7 +458,7 @@
     <article class="funcion">
       <div class="campo"><img src="https://images.stockcake.com/public/d/5/d/d5d3ed2c-cd36-44d0-9843-0905c40e5768_large/blockchain-technology-network-stockcake.jpg" alt="Gold and blue digital connections converging on an intelligent processing hub" loading="lazy" referrerpolicy="no-referrer"></div>
       <div class="info">
-        <h3>Virgo Portals</h3>
+        <h3 data-project-decode>Virgo Portals</h3>
         <p class="datos">Intelligent Business Portals</p>
         <p class="project-description">Intelligent digital portals that bring information, content, and AI-powered workflows together into purposeful business experiences.</p>
         <ul class="project-tags" aria-label="Technology focus"><li>LLMs</li><li>AI Integration</li><li>Content Systems</li><li>Automation</li></ul>
@@ -470,7 +470,7 @@
     <article class="funcion">
       <div class="campo"><img src="https://images.stockcake.com/public/3/4/1/34138a68-041a-4f53-8506-70369d38023c_large/abstract-music-waves-stockcake.jpg" alt="Flowing violet and gold sound waves representing interactive entertainment and media" loading="lazy" referrerpolicy="no-referrer"></div>
       <div class="info">
-        <h3>VirgoPlay</h3>
+        <h3 data-project-decode>VirgoPlay</h3>
         <p class="datos">AI-Powered Interactive Entertainment</p>
         <p class="project-description">Exploring conversational AI, creative media, and interactive experiences that open up new ways to play, imagine, and engage with digital entertainment.</p>
         <ul class="project-tags" aria-label="Technology focus"><li>Conversational AI</li><li>Generative Media</li><li>Interactive Experiences</li></ul>
@@ -771,6 +771,18 @@ if (REDUCED){
       trigger: el, start: "top 72%", once: true,
       onEnter: function(){
         gsap.to(el, { duration: 1.6, scrambleText: {
+          text: original, chars: "upperAndLowerCase", speed: .4, revealDelay: .2 } });
+      }
+    });
+  });
+
+  /* Decode only the two project names, once on their item's first entry. */
+  document.querySelectorAll("#c5 [data-project-decode]").forEach(function(el){
+    var original = el.textContent;
+    ScrollTrigger.create({
+      trigger: el.closest(".funcion"), start: "top bottom", once: true,
+      onEnter: function(){
+        gsap.to(el, { duration: 1.3, scrambleText: {
           text: original, chars: "upperAndLowerCase", speed: .4, revealDelay: .2 } });
       }
     });
