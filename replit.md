@@ -1,45 +1,23 @@
-# [Project name]
+# virgo-animation
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+An unchanged import of https://github.com/angeljgc-dev/halley-planetario.
 
-## Run & Operate
+## Scope
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
-- `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
+Preserve the original source, visuals, assets, layout, and animations. Do not
+redesign, convert to React, or add business content or unrelated features.
+The user requested the repository itself, not a generated replacement.
 
-## Stack
+## Run
 
-- pnpm workspaces, Node.js 24, TypeScript 5.9
-- API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
+The root web preview serves `artifacts/virgo-animation/index.html` over HTTP.
+Run command: `pnpm --filter @workspace/virgo-animation run dev`.
+`serve.mjs` is a dependency-free static HTTP server, binding to `0.0.0.0`
+and the workflow-provided `PORT`. No database or API is required.
 
-## Where things live
+The original site uses external CDN scripts, fonts, photos, and a lunar texture.
+These original URLs are intentionally unchanged and require internet access.
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
-
-## Architecture decisions
-
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
-
-## Product
-
-_Describe the high-level user-facing capabilities of this app once they exist._
-
-## User preferences
-
-_Populate as you build — explicit user instructions worth remembering across sessions._
-
-## Gotchas
-
-_Populate as you build — sharp edges, "always run X before Y" rules._
-
-## Pointers
-
-- See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details
+The imported README files, license, and documentation images are alongside
+the original HTML. `build.mjs` only copies these files for static publishing.
+The pre-provided API and canvas packages are unused by this site.

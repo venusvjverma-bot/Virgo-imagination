@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "virgo-animation"
+description = "The original angeljgc-dev/halley-planetario static site, imported without redesign or content changes and served over HTTP."
+version = "1.0.0"
+id = "artifacts/virgo-animation"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19150
+
+[services.development]
+run = "pnpm --filter @workspace/virgo-animation run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/virgo-animation", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/virgo-animation/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19150"
+BASE_PATH = "/"

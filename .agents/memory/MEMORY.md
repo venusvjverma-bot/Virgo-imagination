@@ -1,0 +1,1 @@
+- [WebGL capture limitation](webgl-capture.md) — screenshot browser failed to create a WebGL context; do not replace original animation to accommodate capture.
