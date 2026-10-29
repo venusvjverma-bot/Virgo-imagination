@@ -74,6 +74,11 @@
     font-size:clamp(4.2rem,17vw,15rem);line-height:.95;
     letter-spacing:.14em;text-indent:.14em;
   }
+  #c1 .imagination{
+    margin-top:.5vh;font-family:var(--display);font-weight:300;font-style:italic;
+    font-size:clamp(1.2rem,3vw,2.4rem);line-height:1.1;
+    letter-spacing:.08em;text-indent:.08em;
+  }
   #c1 .sub{
     margin-top:2.5vh;font-family:var(--mono);
     font-size:clamp(.68rem,1.2vw,.85rem);letter-spacing:.5em;text-indent:.5em;
@@ -270,7 +275,8 @@
 <section class="cap" id="c1" aria-label="Halley, planetario nocturno">
   <div>
     <span class="coord">AR 08h 16m · DEC −17° 42′ · LAT 20.67° N</span>
-    <h1 id="titulo-halley">HALLEY</h1>
+    <h1 id="titulo-halley">VIRGO</h1>
+    <p class="imagination">Imagination</p>
     <p class="sub">PLANETARIO NOCTURNO</p>
     <p class="inicio">La función empieza al deslizar.</p>
   </div>
@@ -600,7 +606,7 @@ if (REDUCED){
 
   /* ---- C1: decode del título al cargar ---- */
   gsap.to("#titulo-halley", {
-    duration: 2, scrambleText: { text: "HALLEY", chars: "∙·+×HALEY01986", speed: .35, revealDelay: .35 }
+    duration: 2, scrambleText: { text: "VIRGO", chars: "∙·+×VIRGO01986", speed: .35, revealDelay: .35 }
   });
   gsap.from("#c1 .coord, #c1 .sub, #c1 .inicio", { opacity: 0, y: 16, duration: .8, stagger: .18, ease: "power2.out", delay: .5 });
 
