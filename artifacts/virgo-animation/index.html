@@ -161,6 +161,10 @@
   #c5 h2{
     text-align:center;font-size:clamp(2.2rem,6.5vw,5rem);
   }
+  #c5 .portfolio-intro{
+    max-width:620px;margin:2.5vh auto 0;text-align:center;
+    color:#B6B2C7;line-height:1.7;
+  }
   #funciones{max-width:980px;margin:8vh auto 0}
   .funcion{
     display:flex;align-items:center;gap:clamp(20px,4vw,52px);
@@ -179,12 +183,24 @@
   .funcion h3{
     font-family:var(--display);font-weight:400;
     font-size:clamp(1.35rem,3.2vw,2.4rem);line-height:1.15;
+    color:var(--luz);
   }
   .funcion .datos{
     margin-top:8px;font-family:var(--mono);
     font-size:clamp(.62rem,1vw,.76rem);letter-spacing:.2em;
-    text-transform:uppercase;color:rgba(232,230,221,.6);
+    text-transform:uppercase;color:var(--oro);
   }
+  .funcion .project-description{
+    margin-top:12px;color:#B6B2C7;
+    font-size:clamp(.95rem,1.3vw,1.05rem);line-height:1.65;
+  }
+  .funcion .project-tags{
+    display:flex;flex-wrap:wrap;gap:6px 12px;margin-top:14px;
+    list-style:none;font-family:var(--mono);
+    font-size:clamp(.58rem,.9vw,.68rem);letter-spacing:.08em;
+    text-transform:uppercase;color:var(--oro);
+  }
+  .funcion .project-tags li{border-bottom:1px solid rgba(217,176,108,.25);padding-bottom:3px}
   .funcion .orbita{flex:0 0 auto;width:clamp(90px,12vw,140px)}
   .funcion .orbita svg{width:100%;height:auto;overflow:visible}
   .orbita ellipse,.orbita path{fill:none;stroke:rgba(217,176,108,.5);stroke-width:1;stroke-dasharray:3 5}
@@ -362,35 +378,42 @@
 </section>
 
 <!-- ============ C5 · CARTELERA ============ -->
-<section class="cap" id="c5" aria-label="Cartelera de funciones">
-  <span class="coord">COORDENADAS DE LA FUNCIÓN · JUE – DOM</span>
-  <h2 class="titular">Cartelera</h2>
+<section class="cap" id="c5" aria-label="Our Projects" lang="en">
+  <span class="coord">VIRGO IMAGINATION · PROJECT PORTFOLIO</span>
+  <h2 class="titular">Our Projects</h2>
+  <p class="portfolio-intro">Virgo Imagination develops and operates multiple independent AI-powered digital products, exploring new possibilities across business, entertainment, and emerging technology.</p>
   <div id="funciones">
     <article class="funcion">
-      <div class="campo"><img src="https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Núcleo de la Vía Láctea" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="campo"><img src="https://images.stockcake.com/public/d/5/d/d5d3ed2c-cd36-44d0-9843-0905c40e5768_large/blockchain-technology-network-stockcake.jpg" alt="Gold and blue digital connections converging on an intelligent processing hub" loading="lazy" referrerpolicy="no-referrer"></div>
       <div class="info">
-        <h3>El corazón de la Vía Láctea</h3>
-        <p class="datos">JUE · 19:00 · DESDE $120 MXN</p>
+        <h3>Virgo Portals</h3>
+        <p class="datos">Intelligent Business Portals</p>
+        <p class="project-description">Intelligent digital portals that bring information, content, and AI-powered workflows together into purposeful business experiences.</p>
+        <ul class="project-tags" aria-label="Technology focus"><li>LLMs</li><li>AI Integration</li><li>Content Systems</li><li>Automation</li></ul>
       </div>
       <div class="orbita" aria-hidden="true">
         <svg viewBox="0 0 120 60"><ellipse class="orb-path" cx="60" cy="30" rx="50" ry="16"/><circle class="astro-c" cx="60" cy="30" r="3.5"/><circle class="satelite" r="2.6"/></svg>
       </div>
     </article>
     <article class="funcion">
-      <div class="campo"><img src="https://images.pexels.com/photos/17302603/pexels-photo-17302603.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Luna llena con cráteres" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="campo"><img src="https://images.stockcake.com/public/3/4/1/34138a68-041a-4f53-8506-70369d38023c_large/abstract-music-waves-stockcake.jpg" alt="Flowing violet and gold sound waves representing interactive entertainment and media" loading="lazy" referrerpolicy="no-referrer"></div>
       <div class="info">
-        <h3>Luna: mareas y cráteres</h3>
-        <p class="datos">VIE · 20:00 · DESDE $120 MXN</p>
+        <h3>VirgoPlay</h3>
+        <p class="datos">AI-Powered Interactive Entertainment</p>
+        <p class="project-description">Exploring conversational AI, creative media, and interactive experiences that open up new ways to play, imagine, and engage with digital entertainment.</p>
+        <ul class="project-tags" aria-label="Technology focus"><li>Conversational AI</li><li>Generative Media</li><li>Interactive Experiences</li></ul>
       </div>
       <div class="orbita" aria-hidden="true">
         <svg viewBox="0 0 120 60"><ellipse class="orb-path" cx="60" cy="30" rx="50" ry="16"/><circle class="astro-c" cx="60" cy="30" r="3.5"/><circle class="satelite" r="2.6"/></svg>
       </div>
     </article>
     <article class="funcion">
-      <div class="campo"><img src="https://images.pexels.com/photos/2646380/pexels-photo-2646380.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Telescopio apuntando a la Vía Láctea" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="campo"><img src="https://images.stockcake.com/public/a/1/5/a159ffed-3f4e-4c44-9529-9fbb93f016d8_large/digital-blockchain-ecosystem-stockcake.jpg" alt="Connected luminous software structures forming an evolving digital project ecosystem" loading="lazy" referrerpolicy="no-referrer"></div>
       <div class="info">
-        <h3>El regreso de Halley</h3>
-        <p class="datos">SÁB · 21:00 · VOLVERÁ EN 2061 · HOY SE PROYECTA</p>
+        <h3>New Digital Ventures</h3>
+        <p class="datos">Independent Products &amp; Experiments</p>
+        <p class="project-description">An evolving collection of independent products and experiments, testing new ideas, exploring different markets, and developing promising concepts into useful digital experiences.</p>
+        <ul class="project-tags" aria-label="Technology focus"><li>AI Prototyping</li><li>Digital Platforms</li><li>Workflow Automation</li></ul>
       </div>
       <div class="orbita" aria-hidden="true">
         <svg viewBox="0 0 120 60"><ellipse class="orb-path" cx="60" cy="30" rx="50" ry="16"/><circle class="astro-c" cx="60" cy="30" r="3.5"/><circle class="satelite" r="2.6"/></svg>
