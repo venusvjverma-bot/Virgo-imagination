@@ -296,28 +296,39 @@
 <!-- ============ C3 · LA CONSTELACIÓN ============ -->
 <section class="cap" id="c3" aria-label="La constelación">
   <div id="c3-inner">
-    <span class="coord">CARTA CELESTE · ORIÓN · MAG ≤ 2.5</span>
-    <svg id="constelacion" viewBox="0 0 400 300" role="img" aria-label="Constelación de Orión dibujándose">
-      <path d="M175 30 L120 60"/>
-      <path d="M175 30 L230 70"/>
-      <path d="M120 60 L150 140"/>
-      <path d="M230 70 L210 150"/>
-      <path d="M150 140 L180 145 L210 150"/>
-      <path d="M150 140 L140 230"/>
-      <path d="M210 150 L250 235"/>
-      <circle class="nodo mayor" cx="120" cy="60" r="4.2"/>
-      <circle class="nodo" cx="230" cy="70" r="3.4"/>
-      <circle class="nodo" cx="175" cy="30" r="2.6"/>
-      <circle class="nodo" cx="150" cy="140" r="3"/>
-      <circle class="nodo" cx="180" cy="145" r="3"/>
-      <circle class="nodo" cx="210" cy="150" r="3"/>
-      <circle class="nodo" cx="140" cy="230" r="3.2"/>
-      <circle class="nodo mayor" cx="250" cy="235" r="4.4"/>
-      <text x="104" y="48">BETELGEUSE</text>
-      <text x="262" y="240">RIGEL</text>
-      <text x="150" y="168">EL CINTURÓN</text>
+    <span class="coord">CARTA CELESTE · VIRGO · MAG ≤ 4.5</span>
+    <svg id="constelacion" viewBox="0 0 400 300" role="img" aria-label="Constelación de Virgo dibujándose">
+      <!-- J2000 positions and traditional Virgo connections:
+           https://github.com/ofrohn/d3-celestial/blob/master/data/constellations.lines.json
+           North up, east left; one uniform scale for RA and declination.
+           Nu–Zavijava–Zaniah–Porrima–Theta–Spica–Syrma–Mu;
+           Vindemiatrix–Auva–Porrima; Theta–Heze–Tau–109 Virginis. -->
+      <path d="M300 87.1 L294 111 L257.4 123.1 L230.2 127 L194.9 147.5 L175.8 175.6 L112.3 149.8 L78.5 148.1"/>
+      <path d="M204.6 65 L212.8 102.8 L230.2 127"/>
+      <path d="M194.9 147.5 L164 122.8 L130.3 112.1 L74.5 110.3"/>
+      <circle class="nodo" data-star="Nu Virginis" cx="300" cy="87.1" r="2.6"/>
+      <circle class="nodo" data-star="Zavijava" cx="294" cy="111" r="3"/>
+      <circle class="nodo" data-star="Zaniah" cx="257.4" cy="123.1" r="2.8"/>
+      <circle class="nodo" data-star="Porrima" cx="230.2" cy="127" r="3.4"/>
+      <circle class="nodo" data-star="Theta Virginis" cx="194.9" cy="147.5" r="2.6"/>
+      <circle class="nodo mayor" data-star="Spica" cx="175.8" cy="175.6" r="4.4"/>
+      <circle class="nodo" data-star="Syrma" cx="112.3" cy="149.8" r="2.6"/>
+      <circle class="nodo" data-star="Mu Virginis" cx="78.5" cy="148.1" r="2.6"/>
+      <circle class="nodo mayor" data-star="Vindemiatrix" cx="204.6" cy="65" r="3.4"/>
+      <circle class="nodo" data-star="Auva" cx="212.8" cy="102.8" r="3.2"/>
+      <circle class="nodo" data-star="Heze" cx="164" cy="122.8" r="3.2"/>
+      <circle class="nodo" data-star="Tau Virginis" cx="130.3" cy="112.1" r="2.4"/>
+      <circle class="nodo" data-star="109 Virginis" cx="74.5" cy="110.3" r="2.5"/>
+      <text data-star="Zaniah" x="269" y="132">LLM ENGINE</text>
+      <text data-star="Vindemiatrix" x="214" y="53">AI INTEGRATION</text>
+      <text data-star="Porrima" x="239" y="155">INTELLIGENT PORTALS</text>
+      <text data-star="Spica" x="175.8" y="201" text-anchor="middle">VIRGO CORE</text>
+      <text data-star="Auva" x="205" y="94" text-anchor="end">AUTOMATION</text>
+      <text data-star="Syrma" x="112.3" y="177" text-anchor="middle">DIGITAL PLATFORMS</text>
+      <text data-star="Heze" x="157" y="105" text-anchor="end">SMART WORKFLOWS</text>
+      <text data-star="Zavijava" x="306" y="103" aria-label="AI EXPERIENCES"><tspan x="306">AI </tspan><tspan x="306" dy="12">EXPERIENCES</tspan></text>
     </svg>
-    <p class="lectura">Siete estrellas, un cazador. El cielo se aprende por líneas.</p>
+    <p class="lectura">La constelación de Virgo. El cielo se aprende por líneas.</p>
   </div>
 </section>
 
