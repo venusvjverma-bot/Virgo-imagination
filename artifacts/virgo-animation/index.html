@@ -240,8 +240,14 @@
     min-height:100vh;min-height:100svh;
     display:grid;place-items:center;text-align:center;
     background:var(--fondo);
+    padding-top:8vh;padding-bottom:8vh;
   }
+  #cta-cap .coord{display:block;margin-bottom:2.5vh}
   #cta-cap .titular{font-size:clamp(2rem,5.5vw,4.4rem);max-width:18ch;margin:0 auto}
+  #cta-cap .policy-intro,#cta-cap .policy-note{
+    max-width:620px;margin:3vh auto 0;color:#B6B2C7;
+    font-size:clamp(.95rem,1.3vw,1.0625rem);line-height:1.7;
+  }
   #btn-reservar{
     display:inline-block;margin-top:6vh;
     font-family:var(--mono);font-size:clamp(.8rem,1.3vw,.95rem);
@@ -254,18 +260,22 @@
   }
   #btn-reservar:focus-visible{outline:2px solid var(--luz);outline-offset:4px}
   #boleto{
-    margin:7vh auto 0;max-width:420px;
+    margin:7vh auto 0;max-width:620px;
     border:1px solid rgba(217,176,108,.5);border-left:1px dashed rgba(217,176,108,.7);
     padding:18px 26px;text-align:left;
     font-family:var(--mono);font-size:clamp(.62rem,1vw,.76rem);
     letter-spacing:.18em;text-transform:uppercase;line-height:2;
-    color:rgba(232,230,221,.75);
+    color:#B6B2C7;
   }
-  #boleto b{color:var(--oro);font-weight:500}
+  #boleto dl div+div{margin-top:16px;padding-top:16px;border-top:1px solid rgba(217,176,108,.2)}
+  #boleto dt{color:var(--oro);font-weight:500}
+  #boleto dd{
+    margin-top:5px;font-family:var(--body);font-size:clamp(.9rem,1.2vw,1rem);
+    text-transform:none;letter-spacing:normal;line-height:1.6;
+  }
   #cta-cap .horario{
-    margin-top:5vh;font-family:var(--mono);
-    font-size:clamp(.62rem,1vw,.78rem);letter-spacing:.26em;
-    text-transform:uppercase;color:rgba(232,230,221,.55);
+    margin-top:5vh;font-family:var(--display);
+    font-size:clamp(1.3rem,2.5vw,1.8rem);font-style:italic;color:var(--luz);
   }
 
   /* FOOTER */
@@ -432,16 +442,34 @@
 </section>
 
 <!-- ============ CTA ============ -->
-<section class="cap" id="cta-cap" aria-label="Reserva">
+<section class="cap" id="cta-cap" aria-label="Privacy &amp; Policies" lang="en">
   <div>
-    <h2 class="titular" data-scramble>Reserva tu lugar bajo las estrellas. <em>El universo abre a las 19:00.</em></h2>
-    <a id="btn-reservar" href="#reserva">RESERVAR FUNCIÓN</a>
-    <div id="boleto" aria-label="Boleto de muestra">
-      <div><b>PASE DE OBSERVACIÓN</b></div>
-      <div>FILA H · ASIENTO 42 · DOMO PRINCIPAL</div>
-      <div>HALLEY · PLANETARIO NOCTURNO</div>
+    <span class="coord">TRUST · PRIVACY · RESPONSIBILITY</span>
+    <h2 class="titular" data-scramble>Built with responsibility.</h2>
+    <p class="policy-intro">Privacy, data protection, and responsible technology are part of how Virgo Imagination develops and operates its projects. Each product or service has policies tailored to its features, how it handles data, and applicable requirements.</p>
+    <a id="btn-reservar" href="mailto:venusvjverma@gmail.com?subject=Inquiry%20%E2%80%94%20Virgo%20Imagination">CONTACT US</a>
+    <div id="boleto" aria-label="Privacy and responsibility principles">
+      <dl>
+        <div>
+          <dt>Privacy &amp; Data Protection</dt>
+          <dd>Project-specific privacy policies explain what information is collected, how it is used, and the choices available to users.</dd>
+        </div>
+        <div>
+          <dt>Terms &amp; Conditions</dt>
+          <dd>Each project sets out its own terms of use, service conditions, and user responsibilities according to its features.</dd>
+        </div>
+        <div>
+          <dt>Confidentiality &amp; Security</dt>
+          <dd>We approach confidential information with care and apply safeguards appropriate to each project's data and operational needs.</dd>
+        </div>
+        <div>
+          <dt>Responsible AI &amp; Content</dt>
+          <dd>We consider AI limitations, content standards, and responsible use in each project, with guidance suited to its purpose and audience.</dd>
+        </div>
+      </dl>
     </div>
-    <p class="horario">JUE – DOM · FUNCIONES 19:00 · 20:00 · 21:00</p>
+    <p class="horario">Each project. Its own policies.</p>
+    <p class="policy-note">Policies are provided at the project or service level according to its features and applicable requirements.</p>
   </div>
 </section>
 

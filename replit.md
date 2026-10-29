@@ -16,6 +16,9 @@ requirement when requesting new left-side images.
 The user approved Virgo Imagination as an independent AI venture studio that
 builds and operates multiple independent AI-powered projects and digital products.
 Describe it as a studio operating its own projects, not as a client-services agency.
+The user approved project/service-level privacy and usage policies tailored to
+each product's features and applicable requirements, rather than one blanket
+policy for every independent project.
 
 ## Run
 
