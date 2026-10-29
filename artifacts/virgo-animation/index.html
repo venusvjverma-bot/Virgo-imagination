@@ -442,7 +442,7 @@
 <section class="cap" id="what-we-do" aria-label="What We Do" lang="en">
   <div class="wwd-inner">
     <span class="coord">WHAT WE DO</span>
-    <h2 class="titular">We build ideas into <em>intelligent reality.</em></h2>
+    <h2 class="titular"><span>We build ideas into</span> <em>intelligent reality.</em></h2>
     <p class="wwd-copy">Virgo Imagination independently develops and operates AI-powered digital products, intelligent platforms, and software solutions designed to turn possibilities into practical experiences.</p>
     <ul class="wwd-caps" aria-label="Capabilities"><li>AI Products</li><li>Digital Platforms</li><li>Software Solutions</li></ul>
     <p class="wwd-close">IMAGINE · DEVELOP · OPERATE</p>
@@ -774,6 +774,21 @@ if (REDUCED){
           text: original, chars: "upperAndLowerCase", speed: .4, revealDelay: .2 } });
       }
     });
+  });
+
+  /* Decode the What We Do heading without replacing its emphasis markup. */
+  var whatWeDoHeading = document.querySelector("#what-we-do h2");
+  var whatWeDoParts = Array.from(whatWeDoHeading.children).map(function(el){
+    return { el: el, text: el.textContent };
+  });
+  ScrollTrigger.create({
+    trigger: whatWeDoHeading, start: "top bottom", once: true,
+    onEnter: function(){
+      whatWeDoParts.forEach(function(part){
+        gsap.to(part.el, { duration: 1.3, scrambleText: {
+          text: part.text, chars: "upperAndLowerCase", speed: .4, revealDelay: .2 } });
+      });
+    }
   });
 
   /* Decode only the two project names, once on their item's first entry. */
