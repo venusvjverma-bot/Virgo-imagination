@@ -155,6 +155,36 @@
     #c4 dl div{justify-content:center;gap:14px;flex-wrap:wrap}
     #c4 dt,#c4 dd{flex-basis:100%} }
 
+  /* C4B · WHAT WE DO (scoped) */
+  #what-we-do{padding-top:12vh;padding-bottom:12vh;text-align:center}
+  #what-we-do .wwd-inner{max-width:760px;margin:0 auto}
+  #what-we-do .coord{display:block;margin-bottom:2.5vh}
+  #what-we-do .titular{font-size:clamp(1.9rem,4.6vw,3.6rem);max-width:20ch;margin:0 auto}
+  #what-we-do .wwd-copy{max-width:58ch;margin:2.5vh auto 0;color:#B6B2C7}
+  #what-we-do .wwd-caps{
+    list-style:none;display:flex;justify-content:center;flex-wrap:wrap;
+    margin-top:5vh;border-top:1px solid rgba(217,176,108,.3);border-bottom:1px solid rgba(217,176,108,.3);
+  }
+  #what-we-do .wwd-caps li{
+    flex:1 1 0;min-width:0;padding:18px 12px;
+    font-family:var(--display);font-style:italic;font-size:clamp(1.1rem,2vw,1.45rem);color:var(--luz);
+  }
+  #what-we-do .wwd-caps li+li{border-left:1px solid rgba(217,176,108,.3)}
+  #what-we-do .wwd-close{
+    margin-top:4vh;font-family:var(--mono);font-size:clamp(.66rem,1.1vw,.8rem);
+    letter-spacing:.42em;text-indent:.42em;color:var(--oro);
+  }
+  @media (max-width:599px){
+    #what-we-do .wwd-caps{flex-direction:column}
+    #what-we-do .wwd-caps li+li{border-left:none;border-top:1px solid rgba(217,176,108,.2)}
+  }
+  @supports (animation-timeline:view()){
+    @media (prefers-reduced-motion:no-preference){
+      #what-we-do .wwd-inner{animation:wwd-rise linear both;animation-timeline:view();animation-range:entry 0% entry 60%}
+    }
+  }
+  @keyframes wwd-rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+
   /* C5 · CARTELERA */
   #c5{padding-top:14vh;padding-bottom:14vh}
   #c5 .coord{display:block;text-align:center;margin-bottom:2.5vh}
@@ -392,6 +422,17 @@
       <div><dt>CONTINUOUS INNOVATION</dt><dd>Testing ideas, refining products, and expanding successful projects as technology and opportunities evolve.</dd></div>
     </dl>
     <p class="studio-motto">Imagine. Build. Operate. <em>Evolve.</em></p>
+  </div>
+</section>
+
+<!-- ============ C4B · WHAT WE DO ============ -->
+<section class="cap" id="what-we-do" aria-label="What We Do" lang="en">
+  <div class="wwd-inner">
+    <span class="coord">WHAT WE DO</span>
+    <h2 class="titular">We build ideas into <em>intelligent reality.</em></h2>
+    <p class="wwd-copy">Virgo Imagination independently develops and operates AI-powered digital products, intelligent platforms, and software solutions designed to turn possibilities into practical experiences.</p>
+    <ul class="wwd-caps" aria-label="Capabilities"><li>AI Products</li><li>Digital Platforms</li><li>Software Solutions</li></ul>
+    <p class="wwd-close">IMAGINE · DEVELOP · OPERATE</p>
   </div>
 </section>
 
