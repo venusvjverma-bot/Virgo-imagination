@@ -22,6 +22,11 @@ policy for every independent project.
 Company-website Terms & Conditions must cover only the informational company
 website, not Virgo Portals, VirgoPlay, or other products. Do not invent a legal
 entity, registration details, address, or governing jurisdiction.
+Virgo Imagination is currently a personally operated brand, not a registered
+Swedish company. The website privacy notice must identify the controller by
+that role without inventing a personal legal name. Keep company-website privacy
+separate from product-specific notices, and distinguish source-code findings
+from unverified hosting and external-provider practices.
 
 ## Run
 

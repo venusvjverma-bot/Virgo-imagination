@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Privacy Policy — Virgo Imagination</title>
+<meta name="description" content="Privacy policy for the Virgo Imagination informational company website: what data may be involved, legal bases, external resources and your GDPR rights. Does not cover Virgo Portals or VirgoPlay.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy Policy — Virgo Imagination">
+<meta property="og:description" content="How personal data is handled in connection with the Virgo Imagination company website.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23030308'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%23D9B06C' stroke-width='2'/%3E%3Ccircle cx='24' cy='9' r='2' fill='%23E8E6DD'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Spectral:ital,wght@0,300;0,400;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--fondo:#030308;--capa1:#0A0E1F;--capa2:#101736;--oro:#D9B06C;--luz:#E8E6DD;--lav:#B6B2C7;
+--display:"Cormorant Garamond",serif;--body:"Spectral",serif;--mono:"IBM Plex Mono",monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:var(--fondo);scroll-behavior:smooth;overflow-x:clip}
+body{min-height:100vh;color:var(--luz);font-family:var(--body);font-weight:300;font-size:1.0625rem;line-height:1.75;
+background:radial-gradient(ellipse at 50% 0%,#101736 0%,#0A0E1F 40%,#030308 85%) fixed;overflow-x:clip}
+::selection{background:var(--oro);color:var(--fondo)}
+a{color:var(--oro);text-underline-offset:4px;text-decoration-color:rgba(217,176,108,.5)}
+a:hover{color:var(--luz)}
+a:focus-visible{outline:1px solid var(--oro);outline-offset:4px}
+.skip{position:absolute;left:-9999px;top:12px;background:var(--oro);color:var(--fondo);padding:8px 16px;z-index:10;font-family:var(--mono);font-size:.8rem}
+.skip:focus{left:12px}
+
+/* starfield */
+.sky{position:fixed;inset:0;z-index:0;pointer-events:none}
+.sky::before,.sky::after{content:"";position:absolute;inset:0;background-repeat:repeat}
+.sky::before{background-image:
+radial-gradient(1px 1px at 12% 18%,rgba(232,230,221,.8),transparent),
+radial-gradient(1px 1px at 72% 9%,rgba(232,230,221,.6),transparent),
+radial-gradient(1.5px 1.5px at 41% 63%,rgba(217,176,108,.8),transparent),
+radial-gradient(1px 1px at 88% 44%,rgba(232,230,221,.7),transparent),
+radial-gradient(1px 1px at 27% 82%,rgba(182,178,199,.7),transparent),
+radial-gradient(1px 1px at 58% 31%,rgba(232,230,221,.5),transparent),
+radial-gradient(1.2px 1.2px at 5% 55%,rgba(232,230,221,.6),transparent),
+radial-gradient(1px 1px at 94% 88%,rgba(217,176,108,.6),transparent);
+background-size:420px 420px;opacity:.85}
+.sky::after{background-image:
+radial-gradient(1px 1px at 33% 12%,rgba(232,230,221,.9),transparent),
+radial-gradient(1px 1px at 81% 67%,rgba(232,230,221,.7),transparent),
+radial-gradient(1.4px 1.4px at 16% 40%,rgba(232,230,221,.8),transparent),
+radial-gradient(1px 1px at 64% 92%,rgba(182,178,199,.8),transparent);
+background-size:290px 290px;animation:twinkle 7s ease-in-out infinite alternate}
+@keyframes twinkle{from{opacity:.25}to{opacity:.8}}
+.orbits{position:fixed;right:-18vmin;top:-14vmin;width:78vmin;height:78vmin;z-index:0;pointer-events:none;opacity:.55}
+.orbits ellipse,.orbits circle.ring{fill:none;stroke:rgba(217,176,108,.35);stroke-width:.6;stroke-dasharray:2 6}
+.orbits .spin{transform-origin:200px 200px;animation:spin 140s linear infinite}
+.orbits .spin2{transform-origin:200px 200px;animation:spin 220s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+#reticula{position:fixed;inset:18px;z-index:1;pointer-events:none;opacity:.45}
+#reticula i{position:absolute;width:26px;height:26px;border:1px solid var(--oro)}
+#reticula i:nth-child(1){top:0;left:0;border-right:none;border-bottom:none}
+#reticula i:nth-child(2){top:0;right:0;border-left:none;border-bottom:none}
+#reticula i:nth-child(3){bottom:0;left:0;border-right:none;border-top:none}
+#reticula i:nth-child(4){bottom:0;right:0;border-left:none;border-top:none}
+
+.wrap{position:relative;z-index:2;max-width:1120px;margin:0 auto;padding:0 max(6vw,env(safe-area-inset-left,0px))}
+.coord{font-family:var(--mono);font-size:clamp(.64rem,1vw,.76rem);letter-spacing:.28em;text-transform:uppercase;color:var(--oro)}
+.back{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-family:var(--mono);font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;text-decoration:none}
+.back svg{width:18px;height:10px;stroke:currentColor;fill:none}
+header.top{padding:clamp(34px,6vh,56px) 0 0}
+.hero{padding:clamp(56px,12vh,120px) 0 clamp(40px,7vh,72px);border-bottom:1px solid rgba(217,176,108,.28)}
+.hero h1{font-family:var(--display);font-weight:300;font-size:clamp(2.8rem,8vw,6.2rem);line-height:1;letter-spacing:.03em;margin-top:2.5vh}
+.hero h1 em{color:var(--oro);font-style:italic}
+.hero .lede{max-width:62ch;margin-top:3vh;color:var(--lav);font-size:clamp(1rem,1.4vw,1.12rem)}
+.hero .lede strong{color:var(--luz);font-weight:400}
+
+.layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:clamp(40px,6vw,88px);padding:clamp(48px,8vh,80px) 0}
+nav.toc{position:sticky;top:48px;align-self:start}
+nav.toc ol{list-style:none;margin-top:18px;border-left:1px solid rgba(217,176,108,.25)}
+nav.toc a{display:flex;gap:12px;padding:6px 0 6px 16px;color:var(--lav);text-decoration:none;font-size:.95rem;line-height:1.4}
+nav.toc a span{font-family:var(--mono);font-size:.7rem;color:var(--oro);padding-top:3px;min-width:1.6em}
+nav.toc a:hover{color:var(--luz)}
+article.terms{max-width:68ch}
+.terms section{padding:0 0 clamp(36px,6vh,56px);scroll-margin-top:32px}
+.terms section+section{padding-top:clamp(36px,6vh,56px);border-top:1px solid rgba(217,176,108,.16)}
+.terms h2{font-family:var(--display);font-weight:400;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15;display:flex;gap:18px;align-items:baseline}
+.terms h2 .n{font-family:var(--mono);font-size:.78rem;letter-spacing:.2em;color:var(--oro);flex:0 0 auto}
+.terms p,.terms ul{margin-top:1.1em}
+.terms ul{padding-left:1.2em}
+.terms li{margin-top:.45em}
+.terms li::marker{color:var(--oro)}
+.terms strong{font-weight:400;color:var(--oro)}
+.note{color:var(--lav);font-style:italic}
+.contact{margin-top:1.4em;padding:20px 24px;border:1px solid rgba(217,176,108,.45);border-left:1px dashed rgba(217,176,108,.7)}
+.contact a{font-family:var(--mono);font-size:.95rem;letter-spacing:.04em;word-break:break-all}
+
+footer{position:relative;z-index:2;text-align:center;padding:10vh 8vw calc(9vh + env(safe-area-inset-bottom,0px));border-top:1px solid rgba(217,176,108,.2);background:rgba(3,3,8,.6)}
+footer .motto{font-family:var(--display);font-style:italic;font-size:clamp(1.1rem,2vw,1.4rem);margin:18px 0 22px}
+footer .desde{font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;color:rgba(217,176,108,.7)}
+
+.rise{animation:rise 1s cubic-bezier(.2,.7,.2,1) both}
+.rise.d2{animation-delay:.15s}.rise.d3{animation-delay:.3s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+@media (max-width:860px){
+.layout{grid-template-columns:1fr}
+nav.toc{position:static;padding:20px 22px;border:1px solid rgba(217,176,108,.25)}
+nav.toc ol{columns:2;column-gap:20px;border-left:none}
+nav.toc a{padding-left:0}
+}
+@media (max-width:520px){nav.toc ol{columns:1}.terms h2{flex-direction:column;gap:6px}}
+@media (prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="sky" aria-hidden="true"></div>
+<svg class="orbits" viewBox="0 0 400 400" aria-hidden="true">
+  <circle class="ring" cx="200" cy="200" r="190"/>
+  <g class="spin"><ellipse cx="200" cy="200" rx="150" ry="60"/><circle cx="350" cy="200" r="2.6" fill="#E8E6DD"/></g>
+  <g class="spin2"><ellipse cx="200" cy="200" rx="100" ry="170" transform="rotate(30 200 200)"/><circle cx="200" cy="30" r="2" fill="#D9B06C"/></g>
+  <circle cx="200" cy="200" r="5" fill="#D9B06C"/>
+</svg>
+<div id="reticula" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<div class="wrap">
+  <header class="top">
+    <a class="back" href="./"><svg viewBox="0 0 18 10" aria-hidden="true"><path d="M17 5H1M5 1L1 5l4 4"/></svg>Return to homepage</a>
+  </header>
+
+  <div class="hero">
+    <span class="coord rise">VIRGO IMAGINATION · WEBSITE PRIVACY</span>
+    <h1 class="rise d2">Privacy <em>Policy</em></h1>
+    <p class="lede rise d3">This notice applies <strong>only to the Virgo Imagination informational company website</strong>. It does not cover Virgo Portals, VirgoPlay or any other individual project. Those projects require separate privacy notices suited to their own features and data handling.</p>
+  </div>
+
+  <div class="layout">
+    <nav class="toc" aria-label="Sections">
+      <span class="coord">Contents</span>
+      <ol>
+        <li><a href="#s1"><span>01</span>Scope and controller</a></li>
+        <li><a href="#s2"><span>02</span>Information involved</a></li>
+        <li><a href="#s3"><span>03</span>Purposes and legal bases</a></li>
+        <li><a href="#s4"><span>04</span>Cookies and storage</a></li>
+        <li><a href="#s5"><span>05</span>External resources</a></li>
+        <li><a href="#s6"><span>06</span>Hosting and recipients</a></li>
+        <li><a href="#s7"><span>07</span>Retention</a></li>
+        <li><a href="#s8"><span>08</span>International transfers</a></li>
+        <li><a href="#s9"><span>09</span>Security</a></li>
+        <li><a href="#s10"><span>10</span>Your rights</a></li>
+        <li><a href="#s11"><span>11</span>Complaints</a></li>
+        <li><a href="#s12"><span>12</span>Updates</a></li>
+        <li><a href="#s13"><span>13</span>Contact</a></li>
+      </ol>
+    </nav>
+
+    <main id="main">
+    <article class="terms">
+      <section id="s1"><h2><span class="n">01</span>Scope and controller</h2>
+        <p>Virgo Imagination is a brand personally operated by an individual. It is not a registered Swedish company.</p>
+        <p>The data controller for personal data processed for this website is the individual operating the Virgo Imagination brand, who can be contacted at <a href="mailto:venusvjverma@gmail.com?subject=Privacy%20inquiry%20%E2%80%94%20Virgo%20Imagination">venusvjverma@gmail.com</a>. In this notice, "we" and "us" refer to that individual operator.</p>
+        <p>For the terms of use of this website, see the <a href="./terms.html">Terms &amp; Conditions</a>.</p>
+      </section>
+
+      <section id="s2"><h2><span class="n">02</span>Information involved</h2>
+        <p><strong>Browsing.</strong> When you visit the website, your browser may expose technical information to the hosting provider and to the providers of external resources the page loads. This may include your IP address, request timestamps, browser and device information, the URLs requested and, if your browser sends it, the referring page. We have not confirmed that every one of these fields is actually collected or stored by each provider.</p>
+        <p><strong>No contact form.</strong> The website has no contact form. The CONTACT US button is an email (mailto) link that opens the email application on your device. Clicking it does not, on its own, submit anything through the website.</p>
+        <p><strong>Email.</strong> If you choose to send an email, the recipient receives your name and email address as set in your email account, your message, any attachments and ordinary email metadata.</p>
+        <p>Anything you send is supplied voluntarily. Please include only the details needed for us to respond, and do not send sensitive personal data unless we have asked for it.</p>
+      </section>
+
+      <section id="s3"><h2><span class="n">03</span>Purposes and legal bases</h2>
+        <p>Where the EU General Data Protection Regulation (GDPR) applies, we rely on the following legal bases, and only where each is genuinely applicable:</p>
+        <ul>
+          <li><strong>General inquiries and correspondence</strong> — our legitimate interests in communicating with people and managing the brand (Art. 6(1)(f)), subject to a balancing against your rights and interests.</li>
+          <li><strong>Pre-contractual requests</strong> — taking steps at your request before entering into a contract (Art. 6(1)(b)), only where the processing is genuinely necessary for steps you have asked us to take towards a contract.</li>
+          <li><strong>Operating, securing and troubleshooting the website</strong> — legitimate interests (Art. 6(1)(f)), only where the processing is necessary and the balance of interests supports it.</li>
+          <li><strong>Legal obligations</strong> — compliance with a legal obligation (Art. 6(1)(c)), only if such an obligation is actually imposed on us.</li>
+          <li><strong>Consent</strong> (Art. 6(1)(a)) — only if a particular optional use expressly asks for your valid consent. Where we rely on consent, you can withdraw it at any time.</li>
+        </ul>
+        <p>Visiting the website or reading this notice does not mean you have given consent. No marketing sign-up or analytics consent flow is currently implemented on the website.</p>
+        <p>Third-party providers may process data for their own purposes on their own legal bases. Those bases are separate from ours and have not been confirmed by us.</p>
+      </section>
+
+      <section id="s4"><h2><span class="n">04</span>Cookies, storage and our own code</h2>
+        <p>Based on an inspection of the current website source code, our own code contains:</p>
+        <ul>
+          <li>no first-party analytics;</li>
+          <li>no advertising scripts or tracking pixels;</li>
+          <li>no code that sets or reads cookies, and no cookie banner;</li>
+          <li>no use of localStorage or sessionStorage;</li>
+          <li>no embedded widgets.</li>
+        </ul>
+        <p>The animations respond to scrolling, mouse movement and viewport size within your browser. The source code does not transmit these interactions to any analytics endpoint.</p>
+        <p class="note">This is a source-inspection finding only. It is not a claim that no cookies are set or no data is collected anywhere.</p>
+        <p>Hosting, CDN or other third-party code injected outside our source, as well as response headers, cookies and provider logging, require separate runtime and provider verification. You can use your browser settings to manage cookies or block external resources, although this may affect how the website looks. The absence of a consent banner is not proof that consent is never legally required.</p>
+      </section>
+
+      <section id="s5"><h2><span class="n">05</span>External resources</h2>
+        <p>The website currently references the following external services:</p>
+        <ul>
+          <li><strong>Google Fonts</strong> (fonts.googleapis.com, fonts.gstatic.com) — font downloads on both the homepage and the legal pages.</li>
+          <li><strong>jsDelivr</strong> (cdn.jsdelivr.net) — GSAP and Three.js animation code on the homepage.</li>
+          <li><strong>StockCake</strong> (images.stockcake.com) — portfolio images on the homepage.</li>
+          <li><strong>Three.js</strong> (threejs.org) — the lunar texture used in the homepage animation.</li>
+          <li><strong>Pexels</strong> (images.pexels.com) — referenced as a preconnect only; the current source makes no image request to Pexels.</li>
+        </ul>
+        <p>Fetching a resource, or preconnecting to a provider, may expose your IP address and network details to that provider. Further request headers are sent only when a request actually happens, and according to your browser settings. StockCake images currently use a no-referrer policy and the lunar texture is requested with anonymous CORS, but these settings do not guarantee that no data is shared in every request.</p>
+        <p>We do not know the exact cookies, practices, retention periods or storage locations of these providers. Depending on the purpose, they may act as independent controllers. Please refer to each provider's own privacy information.</p>
+      </section>
+
+      <section id="s6"><h2><span class="n">06</span>Hosting, logs and recipients</h2>
+        <p>Hosting, infrastructure and CDN providers may process technical server logs needed to deliver the website securely. The actual fields, cookies, logging settings and retention used by these providers have not been verified from the source code.</p>
+        <p>If you email us, your chosen email provider and the recipient mailbox provider (Gmail) process that correspondence. Personal data may also be shared with authorised service providers or advisers, or with public authorities, only where necessary and legally justified.</p>
+        <p>Depending on their actual role, providers may act as processors or as independent controllers. We do not claim that all of them are confirmed contracted processors, or that a data processing agreement is in place with each.</p>
+        <p>We found no code that shares data for marketing or sales purposes. This is a finding about the website source, not a guarantee covering every party.</p>
+      </section>
+
+      <section id="s7"><h2><span class="n">07</span>Retention</h2>
+        <p>Retention depends on the nature of your inquiry, any necessary follow-up and, where applicable, legal obligations or disputes. We aim to keep correspondence no longer than reasonably necessary for those purposes and to delete or anonymise it when it is no longer needed. No fixed retention period or automatic deletion schedule is represented by this notice.</p>
+        <p>Provider backups, logs and mail infrastructure may follow their own schedules, which we have not verified. Contact us for information that applies to your request.</p>
+      </section>
+
+      <section id="s8"><h2><span class="n">08</span>International transfers</h2>
+        <p>Providers may process data outside Sweden and the European Economic Area (EEA). The exact destinations and transfer arrangements have not been confirmed.</p>
+        <p>Where a transfer subject to the GDPR occurs under our control, it requires a valid lawful mechanism, for example an adequacy decision or standard contractual clauses with additional safeguards where needed. We do not claim that standard contractual clauses, adequacy decisions or certifications have been verified or implemented for any provider. You can ask us for any specific information available.</p>
+      </section>
+
+      <section id="s9"><h2><span class="n">09</span>Security</h2>
+        <p>We seek to apply reasonable and appropriate measures based on the risks involved. No system is completely secure, and we cannot guarantee absolute security or legal compliance.</p>
+        <p>Email is not suitable for sending unsolicited, highly sensitive information.</p>
+      </section>
+
+      <section id="s10"><h2><span class="n">10</span>Your rights</h2>
+        <p>Where the GDPR applies, and subject to its conditions, you may have the right to:</p>
+        <ul>
+          <li>receive information about, and access to, your personal data, including a copy;</li>
+          <li>have inaccurate data rectified;</li>
+          <li>have data erased;</li>
+          <li>restrict processing;</li>
+          <li>data portability, for data processed by automated means on the basis of consent or contract, where the conditions are met;</li>
+          <li>object to processing, in particular processing based on legitimate interests;</li>
+          <li>withdraw consent where it is relied on, without affecting the lawfulness of processing before withdrawal.</li>
+        </ul>
+        <p>We may need to verify your identity in a proportionate way, without asking for unnecessary data. We generally respond within one month. Where permitted, this may be extended by up to two further months; if so, we will tell you, with reasons, within the first month. Lawful exceptions mean a request cannot always be fulfilled.</p>
+        <p>The website's code does not implement automated decision-making or profiling that produces legal or similarly significant effects. We cannot promise that third-party providers never profile.</p>
+      </section>
+
+      <section id="s11"><h2><span class="n">11</span>Complaints</h2>
+        <p>You may contact us about a concern, but you are not required to do so first. You can lodge a complaint with the Swedish Authority for Privacy Protection (Integritetsskyddsmyndigheten, IMY) at <a href="https://www.imy.se/en/complaint" rel="noopener">www.imy.se/en/complaint</a>.</p>
+        <p>As applicable, you may also complain to the supervisory authority in the EU/EEA country of your habitual residence, your place of work or the place of the alleged infringement.</p>
+      </section>
+
+      <section id="s12"><h2><span class="n">12</span>Updates</h2>
+        <p>We may update this notice to reflect changes to the website. The source-code findings described here reflect a point in time and may change. Material changes will be indicated appropriately on this page. Changes do not create any automatic consent.</p>
+      </section>
+
+      <section id="s13"><h2><span class="n">13</span>Contact</h2>
+        <p>Privacy questions and rights requests can be sent to the individual operating Virgo Imagination at:</p>
+        <div class="contact"><a href="mailto:venusvjverma@gmail.com?subject=Privacy%20inquiry%20%E2%80%94%20Virgo%20Imagination">venusvjverma@gmail.com</a></div>
+      </section>
+
+      <p><a class="back" href="./"><svg viewBox="0 0 18 10" aria-hidden="true"><path d="M17 5H1M5 1L1 5l4 4"/></svg>Return to homepage</a></p>
+    </article>
+    </main>
+  </div>
+</div>
+
+<footer>
+  <span class="coord">VIRGO IMAGINATION</span>
+  <p class="motto">Imagine. Build. Operate. Evolve.</p>
+  <p class="desde">© 2026 Virgo Imagination. All rights reserved.</p>
+</footer>
+</body>
+</html>
