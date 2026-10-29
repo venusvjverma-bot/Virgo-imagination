@@ -129,6 +129,8 @@
   #c4-inner{max-width:520px}
   #c4 .coord{display:block;margin-bottom:3vh}
   #c4 .titular{font-size:clamp(1.8rem,4.2vw,3.4rem)}
+  #c4 .studio-copy{margin-top:2.5vh;color:var(--luz)}
+  #c4 .studio-copy strong{font-weight:400;color:var(--oro)}
   #c4 dl{
     margin-top:5vh;font-family:var(--mono);
     font-size:clamp(.68rem,1.1vw,.82rem);letter-spacing:.18em;
@@ -138,10 +140,20 @@
     display:flex;justify-content:space-between;gap:20px;
     padding:12px 0;border-bottom:1px solid rgba(217,176,108,.28);
   }
-  #c4 dt{color:rgba(232,230,221,.55)}
-  #c4 dd{color:var(--oro)}
+  #c4 dt{flex:0 0 36%;min-width:0;color:#B6B2C7;overflow-wrap:break-word}
+  #c4 dd{
+    flex:1;min-width:0;color:var(--luz);font-family:var(--body);
+    font-size:clamp(.9rem,1.2vw,1rem);line-height:1.55;
+    letter-spacing:normal;text-transform:none;
+  }
+  #c4 .studio-motto{
+    margin-top:3vh;font-family:var(--display);font-style:italic;
+    font-size:clamp(1.2rem,2vw,1.6rem);color:var(--luz);
+  }
+  #c4 .studio-motto em{color:var(--oro)}
   @media (max-width:799px){ #c4{justify-content:center;text-align:center}
-    #c4 dl div{justify-content:center;gap:14px;flex-wrap:wrap} }
+    #c4 dl div{justify-content:center;gap:14px;flex-wrap:wrap}
+    #c4 dt,#c4 dd{flex-basis:100%} }
 
   /* C5 · CARTELERA */
   #c5{padding-top:14vh;padding-bottom:14vh}
@@ -333,16 +345,19 @@
 </section>
 
 <!-- ============ C4 · EL PLANETA ============ -->
-<section class="cap" id="c4" aria-label="La función">
+<section class="cap" id="c4" aria-label="An independent AI venture studio" lang="en">
   <div id="c4-inner">
-    <span class="coord">FUNCIÓN EN DOMO · 20 M DE DIÁMETRO</span>
-    <h2 class="titular" data-scramble>Cada función es un viaje de 45 minutos y <em>13,800 millones de años.</em></h2>
+    <span class="coord">AN INDEPENDENT AI VENTURE STUDIO</span>
+    <h2 class="titular" data-scramble>One Vision. Multiple Possibilities.</h2>
+    <p class="studio-copy">Virgo Imagination builds, operates, and evolves a growing ecosystem of independent <strong>AI-powered projects</strong> and digital products.</p>
+    <p class="studio-copy">From intelligent portals and language-model applications to creative platforms and automated business solutions, every project begins with an idea and develops into a purposeful digital experience.</p>
     <dl>
-      <div><dt>Duración</dt><dd>45 min</dd></div>
-      <div><dt>Butacas reclinadas</dt><dd>120</dd></div>
-      <div><dt>Proyección</dt><dd>8K · domo completo</dd></div>
-      <div><dt>Cielo calibrado a</dt><dd>tu latitud</dd></div>
+      <div><dt>AI-POWERED PRODUCTS</dt><dd>Developing our own digital products, platforms, and intelligent applications.</dd></div>
+      <div><dt>MULTIPLE INDEPENDENT PROJECTS</dt><dd>Exploring different ideas, markets, and use cases through individual projects under one business.</dd></div>
+      <div><dt>INTELLIGENT TECHNOLOGY</dt><dd>Integrating LLMs, AI workflows, content systems, and automation into practical products.</dd></div>
+      <div><dt>CONTINUOUS INNOVATION</dt><dd>Testing ideas, refining products, and expanding successful projects as technology and opportunities evolve.</dd></div>
     </dl>
+    <p class="studio-motto">Imagine. Build. Operate. <em>Evolve.</em></p>
   </div>
 </section>
 

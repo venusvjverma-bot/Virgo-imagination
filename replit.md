@@ -1,12 +1,18 @@
 # virgo-animation
 
-An unchanged import of https://github.com/angeljgc-dev/halley-planetario.
+An import of https://github.com/angeljgc-dev/halley-planetario with user-approved Virgo Imagination copy and constellation updates.
 
 ## Scope
 
-Preserve the original source, visuals, assets, layout, and animations. Do not
-redesign, convert to React, or add business content or unrelated features.
+Preserve the original visuals, assets, layout, and animations. Do not
+redesign, convert to React, or change content beyond specifically approved sections.
 The user requested the repository itself, not a generated replacement.
+
+## Business positioning
+
+The user approved Virgo Imagination as an independent AI venture studio that
+builds and operates multiple independent AI-powered projects and digital products.
+Describe it as a studio operating its own projects, not as a client-services agency.
 
 ## Run
 
