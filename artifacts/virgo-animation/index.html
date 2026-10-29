@@ -286,11 +286,19 @@
   }
   #despedida p{
     font-family:var(--display);font-style:italic;font-weight:300;
-    font-size:clamp(1.3rem,3vw,2.2rem);color:rgba(232,230,221,.85);
+    font-size:clamp(1rem,1.8vw,1.3rem);color:rgba(232,230,221,.85);
   }
+  #despedida .legal-label{
+    appearance:none;border:0;background:none;padding:4px 0;
+    font:inherit;color:inherit;cursor:pointer;
+    text-decoration:underline;text-decoration-color:rgba(217,176,108,.5);
+    text-underline-offset:4px;
+  }
+  #despedida .legal-label:hover{color:var(--oro)}
+  #despedida .legal-label:focus-visible{outline:1px solid var(--oro);outline-offset:4px}
   #despedida .desde{
     margin-top:3vh;font-family:var(--mono);font-size:.68rem;
-    letter-spacing:.3em;text-transform:uppercase;color:rgba(217,176,108,.7);
+    font-style:normal;letter-spacing:.04em;color:rgba(217,176,108,.7);
   }
 
   @media (max-height:500px){
@@ -473,9 +481,9 @@
   </div>
 </section>
 
-<footer id="despedida">
-  <p>Al salir, mira hacia arriba. Ya sabrás los nombres.</p>
-  <p class="desde">BAJO ESTE CIELO DESDE 1986</p>
+<footer id="despedida" lang="en">
+  <p><button class="legal-label" type="button">Privacy Policy</button> <span aria-hidden="true">·</span> <button class="legal-label" type="button">Terms &amp; Conditions</button></p>
+  <p class="desde">© 2026 Virgo Imagination. All rights reserved.</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
