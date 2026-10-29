@@ -19,6 +19,9 @@ Describe it as a studio operating its own projects, not as a client-services age
 The user approved project/service-level privacy and usage policies tailored to
 each product's features and applicable requirements, rather than one blanket
 policy for every independent project.
+Company-website Terms & Conditions must cover only the informational company
+website, not Virgo Portals, VirgoPlay, or other products. Do not invent a legal
+entity, registration details, address, or governing jurisdiction.
 
 ## Run
 
