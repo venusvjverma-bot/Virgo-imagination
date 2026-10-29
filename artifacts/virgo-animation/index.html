@@ -36,6 +36,10 @@
   #space{
     position:fixed;inset:0;z-index:0;display:block;width:100%;height:100%;
   }
+  /* Keep the mobile canvas covered and stable while browser toolbars move. */
+  @media (max-width:799px) and (hover:none){
+    #space{width:100%!important;height:100lvh!important}
+  }
   body.no3d #space{display:none}
   body.no3d{
     background:radial-gradient(ellipse at 50% 30%,#101736 0%,#0A0E1F 45%,#030308 100%);
@@ -590,15 +594,18 @@ function buildRingTexture(){
 
 function initThree(){
   var canvas = document.getElementById("space");
+  var stableMobileCanvas = window.matchMedia("(max-width: 799px) and (hover: none)");
+  var canvasWidth = window.innerWidth;
+  var canvasHeight = stableMobileCanvas.matches ? canvas.clientHeight : window.innerHeight;
   renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: false, powerPreference: "high-performance" });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(canvasWidth, canvasHeight, !stableMobileCanvas.matches);
 
   scene = new THREE.Scene();
   scene.background = new THREE.Color(0x030308);
   scene.fog = new THREE.FogExp2(0x0A0E1F, 0.010);
 
-  camera = new THREE.PerspectiveCamera(60, window.innerWidth/window.innerHeight, .1, DEPTH + 120);
+  camera = new THREE.PerspectiveCamera(60, canvasWidth/canvasHeight, .1, DEPTH + 120);
   camera.position.set(0, 0, camProxy.z);
 
   /* estrellas */
@@ -671,9 +678,14 @@ function initThree(){
   planetGroup.add(rings);
 
   window.addEventListener("resize", function(){
-    camera.aspect = window.innerWidth/window.innerHeight;
+    var width = window.innerWidth;
+    var height = stableMobileCanvas.matches ? canvas.clientHeight : window.innerHeight;
+    if (stableMobileCanvas.matches && width === canvasWidth && height === canvasHeight) return;
+    canvasWidth = width;
+    canvasHeight = height;
+    camera.aspect = width/height;
     camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(width, height, !stableMobileCanvas.matches);
   });
 
   /* regiones de color: índigo → violeta → teal */
